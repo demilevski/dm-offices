@@ -1,4 +1,4 @@
-//Genre Ajax Filtering
+//Ajax Filtering
 jQuery(function($)
 {
     //Load posts on document ready
@@ -62,7 +62,7 @@ jQuery(function($)
 	
 	$('#submit-search').live('click', function(e){
 		e.preventDefault();
-		genre_get_posts(); //Load Posts
+		get_posts(); //Load Posts
 	});
  
  
