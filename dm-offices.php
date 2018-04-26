@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: My Offices
-Description: Bla bla bla
+Description: This plugin create a custom post type Offices with 2 custom taxonomy ( location / branch ) and page template for the AJAX filtering.
 Version: 1.0
 Author: Goran Milevski
 Author URI: http://demilevski.com
@@ -399,7 +399,7 @@ function ajax_offices_filter()
 	$book_args = array(
 		'post_type' => 'offices',
 		's' => $search_value,
-		'posts_per_page' => 2,
+		'posts_per_page' => 3,
 		'tax_query' => $tax_query,
 		'paged' => $paged
 	);
